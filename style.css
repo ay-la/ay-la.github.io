@@ -24,19 +24,37 @@ nav a:hover {
     color: #4CAF50;
 }
 
+a {
+    display: inline-block; /* Keeps links inline but allows width and height settings */
+    margin-right: 10px; /* Adds space between the image links */
+}
+
 .container {
     display: flex;
     height: 100%;
 }
 
-.left-panel {
+#left-panel {
     background-color: #f4f4f4;
-    width: 50%;
+    width: 30%;
     padding: 20px;
 }
 
-.right-panel {
+#right-panel {
     background-color: #ddd;
-    width: 50%;
+    flex-grow: 1;
+    width: 70%;
     padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    a {
+        display: block; /* Stacks the links vertically on smaller screens */
+        margin-bottom: 10px;
+    }
 }
