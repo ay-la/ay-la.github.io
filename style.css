@@ -29,6 +29,7 @@ nav a:hover {
 
 a {
     display: inline-block; /* Keeps links inline but allows width and height settings */
+    color: black
     margin-right: 10px; /* Adds space between the image links */
 }
 
