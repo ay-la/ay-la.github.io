@@ -1,6 +1,9 @@
-body {
+body, html {
+	height: 100%;
+    margin: 0;
     font-family: Arial, sans-serif;
 }
+
 header {
     background: #333;
     color: #fff;
@@ -19,4 +22,21 @@ nav a {
 }
 nav a:hover {
     color: #4CAF50;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left-panel {
+    background-color: #f4f4f4;
+    width: 50%;
+    padding: 20px;
+}
+
+.right-panel {
+    background-color: #ddd;
+    width: 50%;
+    padding: 20px;
 }
